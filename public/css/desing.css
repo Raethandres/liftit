@@ -1,0 +1,156 @@
+
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: indianred;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #00B2EE;
+}
+
+
+
+.flex-container {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-container>.navigation{
+  width: 200px;
+  justify-content: space-around;
+
+}
+
+.flex-container>.navigation:hover{
+  background: #00B2EE;
+}
+.add{
+  padding: 10px;
+  list-style: none;
+  margin: 0; 
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.add>input{
+  background-color: white;
+  padding-left: 40px;
+  width: 20%;
+}
+.flex-item{
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.check{
+  background:tomato;
+}
+.flex-container>.check:hover{
+  background: #EE5C42;
+}
+
+.add > h3{
+  width: 30%;
+}
+a{
+  color: white;
+}
+.add>.flex-container>.rep{
+  background: #363636;
+  width: 130%;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+.add>.flex-container>.rep:hover{
+  
+  background: #4A4A4A;
+ 
+}
+a:hover{
+   color: white;
+  text-decoration: none;
+}
+
+@media(max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+  .add>input{
+  width: 60%;
+}
+.add > h3{
+  width: 80%;
+}
+}
+@media(max-width: 300px) {
+  .navigation {
+    justify-content: space-around;
+  }
+  .add>input{
+  width: 60%;
+}
+.add > h3{
+  width: 80%;
+}
+}
+
+@media(max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .add > h3{
+  width: 80%;
+}
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
