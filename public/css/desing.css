@@ -24,7 +24,7 @@
 }
 
 .navigation a:hover {
-  background: #00B2EE;
+  background: #CD5555;
 }
 
 
@@ -72,19 +72,9 @@
   padding-left: 40px;
   width: 20%;
 }
-.flex-item{
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
-}
 
-.check{
-  background:tomato;
-}
-.flex-container>.check:hover{
-  background: #EE5C42;
-}
+
+
 
 .add > h3{
   width: 30%;

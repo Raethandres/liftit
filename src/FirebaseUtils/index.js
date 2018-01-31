@@ -11,7 +11,6 @@ const database = firebase.database();
 const auth = firebase.auth();
 
 auth.onAuthStateChanged((user) => {
-  console.log("firebase")
   if (user) {
     const { email, uid } = user;
     store.dispatch({

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {Switch,Route,Link} from "react-router-dom"
 import Home from './home'
 import Log from './log'
+import Not from './not'
 import { withRouter } from 'react-router-dom'
 import {connect} from "react-redux"
 
@@ -19,6 +20,7 @@ class Layer extends Component {
        
     	<Route exact path="/" render={props => <Home {...this.props} />}/>
      	<Route path="/login" render={props => <Log {...this.props}/>}/>
+      <Route component={Not}/>
      	</Switch>
      	
      
